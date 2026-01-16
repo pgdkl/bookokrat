@@ -43,6 +43,7 @@ pub enum BuiltinTheme {
     CatppuccinMocha,
     Kanagawa,
     KanagawaDragon,
+    EverforestDark,
 }
 
 impl BuiltinTheme {
@@ -52,6 +53,7 @@ impl BuiltinTheme {
             BuiltinTheme::CatppuccinMocha => "Catppuccin Mocha",
             BuiltinTheme::Kanagawa => "Kanagawa",
             BuiltinTheme::KanagawaDragon => "Kanagawa Dragon",
+            BuiltinTheme::EverforestDark => "Everforest Dark",
         }
     }
 
@@ -61,6 +63,7 @@ impl BuiltinTheme {
             BuiltinTheme::CatppuccinMocha => &CATPPUCCIN_MOCHA_PALETTE,
             BuiltinTheme::Kanagawa => &KANAGAWA_PALETTE,
             BuiltinTheme::KanagawaDragon => &KANAGAWA_DRAGON_PALETTE,
+            BuiltinTheme::EverforestDark => &EVERFOREST_DARK_PALETTE,
         }
     }
 
@@ -70,6 +73,7 @@ impl BuiltinTheme {
             BuiltinTheme::CatppuccinMocha,
             BuiltinTheme::Kanagawa,
             BuiltinTheme::KanagawaDragon,
+            BuiltinTheme::EverforestDark,
         ]
     }
 }
@@ -368,6 +372,26 @@ static KANAGAWA_DRAGON_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette
     base_0d: smart_color(0x8ba4b0),
     base_0e: smart_color(0xa292a3),
     base_0f: smart_color(0x7aa89f),
+});
+
+// Everforest Dark theme (Hard)
+static EVERFOREST_DARK_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette {
+    base_00: smart_color(0x1e2326), // bgdim
+    base_01: smart_color(0x272e33), // bg0
+    base_02: smart_color(0x2e383c), // bg1
+    base_03: smart_color(0x7a8478), // grey0
+    base_04: smart_color(0x859289), // grey1
+    base_05: smart_color(0xd3c6aa), // fg
+    base_06: smart_color(0xd3c6aa), // fg
+    base_07: smart_color(0xd3c6aa), // Light bg0
+    base_08: smart_color(0xe67e80), // red
+    base_09: smart_color(0xdbbc7f), // yellow
+    base_0a: smart_color(0x83c092), // aqua/cyan
+    base_0b: smart_color(0xa7c080), // green
+    base_0c: smart_color(0xe69875), // orange
+    base_0d: smart_color(0x7fbbb3), // blue
+    base_0e: smart_color(0xd699b6), // purple
+    base_0f: smart_color(0x9da9a0), // grey2
 });
 
 // Backward compatibility alias
