@@ -44,6 +44,7 @@ pub enum BuiltinTheme {
     Kanagawa,
     KanagawaDragon,
     EverforestDark,
+    RosepineMoon,
 }
 
 impl BuiltinTheme {
@@ -54,6 +55,7 @@ impl BuiltinTheme {
             BuiltinTheme::Kanagawa => "Kanagawa",
             BuiltinTheme::KanagawaDragon => "Kanagawa Dragon",
             BuiltinTheme::EverforestDark => "Everforest Dark",
+            BuiltinTheme::RosepineMoon => "Rosepine Moon",
         }
     }
 
@@ -64,6 +66,7 @@ impl BuiltinTheme {
             BuiltinTheme::Kanagawa => &KANAGAWA_PALETTE,
             BuiltinTheme::KanagawaDragon => &KANAGAWA_DRAGON_PALETTE,
             BuiltinTheme::EverforestDark => &EVERFOREST_DARK_PALETTE,
+            BuiltinTheme::RosepineMoon => &ROSEPINE_MOON_PALETTE,
         }
     }
 
@@ -74,6 +77,7 @@ impl BuiltinTheme {
             BuiltinTheme::Kanagawa,
             BuiltinTheme::KanagawaDragon,
             BuiltinTheme::EverforestDark,
+            BuiltinTheme::RosepineMoon,
         ]
     }
 }
@@ -392,6 +396,26 @@ static EVERFOREST_DARK_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette
     base_0d: smart_color(0x7fbbb3), // blue
     base_0e: smart_color(0xd699b6), // purple
     base_0f: smart_color(0x9da9a0), // grey2
+});
+
+// Rosepine Moon theme
+static ROSEPINE_MOON_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette {
+    base_00: smart_color(0x191724), // Base
+    base_01: smart_color(0x1f1d2e), // Surface
+    base_02: smart_color(0x26233a), // Overlay
+    base_03: smart_color(0x6e6a86), // Muted
+    base_04: smart_color(0x908caa), // Subtle
+    base_05: smart_color(0xe0def4), // Text
+    base_06: smart_color(0xe0def4), // Text
+    base_07: smart_color(0xe0def4), // Text
+    base_08: smart_color(0xeb6f92), // Love
+    base_09: smart_color(0xea9a97), // Rose
+    base_0a: smart_color(0xf6c177), // Gold
+    base_0b: smart_color(0x3e8fb0), // Pine
+    base_0c: smart_color(0x9ccfd8), // Foam
+    base_0d: smart_color(0xc4a7e7), // Iris
+    base_0e: smart_color(0xc4a7e7), // Iris
+    base_0f: smart_color(0x908caa), // Subtle
 });
 
 // Backward compatibility alias
