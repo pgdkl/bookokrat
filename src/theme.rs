@@ -409,11 +409,11 @@ static ROSEPINE_MOON_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette {
     base_06: smart_color(0xe0def4), // Text
     base_07: smart_color(0xe0def4), // Text
     base_08: smart_color(0xeb6f92), // Love
-    base_09: smart_color(0xea9a97), // Rose
-    base_0a: smart_color(0xf6c177), // Gold
-    base_0b: smart_color(0x3e8fb0), // Pine
+    base_09: smart_color(0xc4a7e7), // Iris
+    base_0a: smart_color(0xea9a97), // Rose
+    base_0b: smart_color(0xf6c177), // Gold
     base_0c: smart_color(0x9ccfd8), // Foam
-    base_0d: smart_color(0xc4a7e7), // Iris
+    base_0d: smart_color(0x3e8fb0), // Pine
     base_0e: smart_color(0xc4a7e7), // Iris
     base_0f: smart_color(0x908caa), // Subtle
 });
