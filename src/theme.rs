@@ -45,6 +45,7 @@ pub enum BuiltinTheme {
     KanagawaDragon,
     EverforestDark,
     RosepineMoon,
+    Vague,
 }
 
 impl BuiltinTheme {
@@ -56,6 +57,7 @@ impl BuiltinTheme {
             BuiltinTheme::KanagawaDragon => "Kanagawa Dragon",
             BuiltinTheme::EverforestDark => "Everforest Dark",
             BuiltinTheme::RosepineMoon => "Rosepine Moon",
+            BuiltinTheme::Vague => "Vague",
         }
     }
 
@@ -67,6 +69,7 @@ impl BuiltinTheme {
             BuiltinTheme::KanagawaDragon => &KANAGAWA_DRAGON_PALETTE,
             BuiltinTheme::EverforestDark => &EVERFOREST_DARK_PALETTE,
             BuiltinTheme::RosepineMoon => &ROSEPINE_MOON_PALETTE,
+            BuiltinTheme::Vague => &VAGUE_PALETTE,
         }
     }
 
@@ -78,6 +81,7 @@ impl BuiltinTheme {
             BuiltinTheme::KanagawaDragon,
             BuiltinTheme::EverforestDark,
             BuiltinTheme::RosepineMoon,
+            BuiltinTheme::Vague,
         ]
     }
 }
@@ -400,9 +404,9 @@ static EVERFOREST_DARK_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette
 
 // Rosepine Moon theme
 static ROSEPINE_MOON_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette {
-    base_00: smart_color(0x191724), // Base
-    base_01: smart_color(0x1f1d2e), // Surface
-    base_02: smart_color(0x26233a), // Overlay
+    base_00: smart_color(0x18191a), // Base
+    base_01: smart_color(0x212223), // Surface
+    base_02: smart_color(0x363738), // Overlay
     base_03: smart_color(0x6e6a86), // Muted
     base_04: smart_color(0x908caa), // Subtle
     base_05: smart_color(0xe0def4), // Text
@@ -416,6 +420,26 @@ static ROSEPINE_MOON_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette {
     base_0d: smart_color(0x3e8fb0), // Pine
     base_0e: smart_color(0xc4a7e7), // Iris
     base_0f: smart_color(0x908caa), // Subtle
+});
+
+// Vague theme
+static VAGUE_PALETTE: Lazy<Base16Palette> = Lazy::new(|| Base16Palette {
+    base_00: smart_color(0x18191a), // background
+    base_01: smart_color(0x1c1c24), // surface
+    base_02: smart_color(0x252530), // overlay
+    base_03: smart_color(0x606079), // muted
+    base_04: smart_color(0x878787), // gray
+    base_05: smart_color(0xcdcdcd), // text
+    base_06: smart_color(0xcdcdcd), // text
+    base_07: smart_color(0xcdcdcd), // text
+    base_08: smart_color(0xd8647e), // red
+    base_09: smart_color(0xe0a363), // yellow2
+    base_0a: smart_color(0xc48282), // peach
+    base_0b: smart_color(0x7fa563), // green
+    base_0c: smart_color(0x7e98e8), // blue
+    base_0d: smart_color(0x6e94b2), // teal
+    base_0e: smart_color(0xbb9dbd), // pink
+    base_0f: smart_color(0xb4d4cf), // aqua
 });
 
 // Backward compatibility alias
